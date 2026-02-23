@@ -593,6 +593,31 @@ main{
   .nav-toggle{ display:none; }
 }
 
+
+/* --- Zoom-out / overscroll safety --- */
+html, body{
+  background: #000;
+  overflow-x: hidden;
+}
+
+nav{
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+
+/* --- Footer socials mobile wrap fix --- */
+.footer-socials{
+  flex-wrap: wrap;
+  row-gap: 12px;
+}
+@media (max-width: 600px){
+  .footer-socials{
+    gap: 14px;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -772,7 +797,7 @@ main{
       </a>
     </div>
     <div class="social-contact-row">
-      <span>📞</span><a href="tel:+15183905839">+1 (518) 390-5839</a>
+      <span>📱</span><a href="tel:+15183905839">+1 (518) 390-5839</a>
       <span>✉</span><a href="mailto:clarksstudio2024@gmail.com">clarksstudio2024@gmail.com</a>
     </div>
   </div>
@@ -839,7 +864,7 @@ main{
         <img src="assets/dylan.jpg" alt="Dylan">
       </div>
       <div class="team-info">
-        <div class="team-name">Dylan</div>
+        <div class="team-name">Dylan Barney</div>
         <div class="team-role">On-Site Production Assistant</div>
       </div>
     </div>
@@ -849,7 +874,7 @@ main{
         <img src="assets/Oliva.jpg" alt="Olivia">
       </div>
       <div class="team-info">
-        <div class="team-name">Olivia</div>
+        <div class="team-name">Olivia Bobbie</div>
         <div class="team-role">Photographer</div>
       </div>
     </div>
@@ -917,6 +942,4 @@ main{
     });
   })();
 </script>
-
-\1
 </html>
